@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
+import { RoundedBox } from '@react-three/drei'
 
 
 function Three(props) {
@@ -18,8 +19,9 @@ function Three(props) {
       scale={3}
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? '#0ae448' : '#61dafb'} />
+      <RoundedBox args={[1,1,1]} radius={0.1}>
+        <meshStandardMaterial roughness={0.25} color={hovered ? '#0ae448' : '#61dafb'} />
+      </RoundedBox>
     </mesh>
   )
 }

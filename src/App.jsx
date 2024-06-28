@@ -63,8 +63,9 @@ function App() {
         </Canvas>
       </div>
       <p className="about-info">
-        An Unofficial template by <a href="github.com/luke-rusthon">Luke Rushton</a>
+        An Unofficial template by <a href="github.com/luke-rushton">Luke Rushton</a>
       </p>
+      <a href="github.com/luke-rushton/ViRT-3G">Repo</a>
     </>
   )
 }
