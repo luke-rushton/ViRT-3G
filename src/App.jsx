@@ -20,9 +20,11 @@ function App() {
   useGSAP( 
     () => {
       gsap.from('.logo', { 
-        x: -1000,
-        ease: "sine.out",
-        stagger: -0.2,
+        y: -200,
+        opacity: 0,
+        ease: "back.out",
+        duration: 1,
+        stagger: 0.2,
       });
     },
     { scope: container}
